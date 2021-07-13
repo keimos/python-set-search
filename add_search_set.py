@@ -1,0 +1,14 @@
+# add_search_set.py
+
+# number set definition
+number_set = {23, 90, 78, 12, 34, 67}
+
+# new data is added
+
+number_set.add(50)
+
+#set values printing
+print(number_set)
+
+_message = "that number is not available!"
+
