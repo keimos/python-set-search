@@ -14,4 +14,11 @@ _message = "that number is not available!"
 
 # request use for a number value for search
 search_val = int(input("Input a number:"))
+# Search the numbers in the set
+for val in number_set:
+    if val == search_val:
+        _message = "that number is available!"
+break
+
+print(_message)
 
