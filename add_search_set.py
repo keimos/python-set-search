@@ -18,7 +18,7 @@ search_val = int(input("Input a number:"))
 for val in number_set:
     if val == search_val:
         _message = "that number is available!"
-break
+    break
 
 print(_message)
 
