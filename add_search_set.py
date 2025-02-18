@@ -21,7 +21,7 @@ def number_search(number_set, search_val):
         return "That number is NOT available!"
 
 def main():
-    number_set = create_number_set
+    number_set = create_number_set()
 
     # Add new data to the set
     add_number_to_set(number_set, 50)
