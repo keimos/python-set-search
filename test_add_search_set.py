@@ -12,5 +12,12 @@ class TestNumberSet(unittest.TestCase):
         expected_set = {23, 90, 78, 12, 34, 67}
         self.assertEqual(self.number_set, expected_set)
 
+    def test_print_number_set(self):
+        number_set = create_number_set()
+        expected_output = "{23, 34, 12, 78, 90, 67}\n"
+        with self.assertLogs(level='INFO') as log:
+            print_number_set(number_set)
+        self.assertEqual(log.output, [expected_output])
+
 if __name__ == "__main__":
     unittest.main
