@@ -19,5 +19,10 @@ class TestNumberSet(unittest.TestCase):
             print_number_set(number_set)
         self.assertEqual(log.output, [expected_output])
 
+    def test_number_search_found(self):
+        number_set = create_number_set()
+        result = number_search(number_set, 34)
+        self.assertEqual(result, "That number is available!")
+
 if __name__ == "__main__":
     unittest.main
