@@ -1,12 +1,7 @@
 import unittest
-from add_search_set import create_number_set, add_number_to_set, number_search
+from add_search_set import create_number_set, add_number_to_set, number_search, print_number_set)
 
 class TestNumberSet(unittest.TestCase):
-
-    def setUp(self):
-        # This method is called before each test.
-        self.number_set = create_number_set()
-
     def test_create_number_set(self):
         # Test if this initial number set is created properly
         expected_set = {23, 90, 78, 12, 34, 67}
@@ -23,6 +18,11 @@ class TestNumberSet(unittest.TestCase):
         number_set = create_number_set()
         result = number_search(number_set, 34)
         self.assertEqual(result, "That number is available!")
+
+    def test_number_search_not_found(self):
+        number_set = create_number_set()
+        result = number_search(number_set, 99)
+        self.assertEqual(result, "That number is NOT available")
 
 if __name__ == "__main__":
     unittest.main
