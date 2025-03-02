@@ -22,7 +22,7 @@ class TestNumberSet(unittest.TestCase):
     def test_number_search_not_found(self):
         number_set = create_number_set()
         result = number_search(number_set, 99)
-        self.assertEqual(result, "That number is NOT available")
+        self.assertEqual(result, "That number is NOT available!")
 
     def test_add_number_to_set(self):
         number_set = create_number_set()
