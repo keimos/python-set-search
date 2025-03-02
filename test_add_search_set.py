@@ -24,5 +24,10 @@ class TestNumberSet(unittest.TestCase):
         result = number_search(number_set, 99)
         self.assertEqual(result, "That number is NOT available")
 
+    def test_add_number_to_set(self):
+        number_set = create_number_set()
+        add_number_to_set(number_set, 50)
+        self.assertIn(50, number_set)
+
 if __name__ == "__main__":
     unittest.main
