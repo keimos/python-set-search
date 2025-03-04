@@ -2,19 +2,19 @@
 
 # number set definition
 def create_number_set():
-    "Create and return the initial number set"
+    """Create and return the initial number set"""
     return {23, 90, 78, 12, 34, 67}
 
 def add_number_to_set(number_set, number):
-    "Add a number to the set"
+    """Add a number to the set"""
     number_set.add(number)
 
 def print_number_set(number_set):
-    "Print the current values in the set"
+    """Print the current values in the set"""
     print(number_set)
 
 def number_search(number_set, search_val):
-    "Search for a number in the set and return the appropriate message"
+    """Search for a number in the set and return the appropriate message"""
     if search_val in number_set:
         return "That number is available!"
     else:
